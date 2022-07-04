@@ -1,0 +1,9 @@
+
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 192.168.1.102:2181
+  application:
+    name: payment8003
+server:
+  port: 8003
