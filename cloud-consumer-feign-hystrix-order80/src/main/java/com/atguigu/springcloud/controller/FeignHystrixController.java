@@ -20,9 +20,7 @@ public class FeignHystrixController {
 
 
     @GetMapping("/consumer/payment/hystrix/ok/{id}")
-    @HystrixCommand
     public String paymentInfo_OK(@PathVariable("id") Integer id) {
-//        int i  = 10/0;
         String result = paymentHystrixService.paymentInfoHysitrx(id);
         return result;
     }
