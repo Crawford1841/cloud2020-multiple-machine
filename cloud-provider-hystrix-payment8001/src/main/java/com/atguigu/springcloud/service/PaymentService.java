@@ -5,6 +5,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
 
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -59,4 +60,6 @@ public class PaymentService {
     {
         return "id 不能负数，请稍后再试，/(ㄒoㄒ)/~~   id: " +id;
     }
+
 }
+
