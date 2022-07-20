@@ -1,0 +1,21 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.102:1111
+#        server-addr: localhost:8848 #配置Nacos地址
+      config:
+        server-addr: 192.168.1.102:1111
+#        server-addr: localhost:8848
+        namespace: 84f8abe0-85f9-42b2-8663-f6d1a3657e1e
+        group: DEV_GROUP
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
