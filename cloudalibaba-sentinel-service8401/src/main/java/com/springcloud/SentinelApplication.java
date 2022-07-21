@@ -1,15 +1,15 @@
-package com.atguigu.springcloud;
+package com.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-//import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-//@EnableEurekaClient
 @EnableDiscoveryClient
-public class GateWayApplication {
+public class SentinelApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(GateWayApplication.class,args);
+        SpringApplication.run(SentinelApplication.class,args);
     }
+
 }

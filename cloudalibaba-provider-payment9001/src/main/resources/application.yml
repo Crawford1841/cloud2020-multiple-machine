@@ -9,11 +9,12 @@ spring:
       discovery:
         server-addr: 192.168.1.102:1111
 #        server-addr: localhost:8848 #配置Nacos地址
-      config:
-        server-addr: 192.168.1.102:1111
+#      config:
+#        server-addr: 192.168.1.102:1111
 #        server-addr: localhost:8848
-        namespace: 84f8abe0-85f9-42b2-8663-f6d1a3657e1e
-        group: DEV_GROUP
+#        namespace: 8bd9121d-8c7e-4c23-bc8c-49381203e3f8
+#        name: gulimall-product
+#        group: DEV_GROUP
 management:
   endpoints:
     web:
