@@ -54,9 +54,8 @@ public class FllowLimtController {
     }
 
     @GetMapping("/testG")
-    @SentinelResource(value = "testHotKey",blockHandler = "deal_testHotKey",fallback = "default_testHotKey")
-    public String testHotKey(@RequestParam("p1") String p1,@RequestParam("p2") String p2){
-        int i  = 10 /0;
+    @SentinelResource(value = "testHotKey", blockHandler= "deal_testHotKey",fallback = "default_testHotKey")
+    public String testHotKey(@RequestParam(value = "p1",required = false) String p1,@RequestParam(value = "p2",required = false) String p2){
         return "testHotKey";
     }
 
@@ -67,5 +66,6 @@ public class FllowLimtController {
     public String default_testHotKey(String p1, String p2, BlockException exception){
         return "--------default_defaultFallback";
     }
+
 
 }

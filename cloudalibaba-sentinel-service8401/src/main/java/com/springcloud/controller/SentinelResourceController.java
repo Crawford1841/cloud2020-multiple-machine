@@ -47,6 +47,7 @@ public class SentinelResourceController {
             blockHandlerClass = CustomerBlockHandler.class, blockHandler = "handleException2")
     public CommonResult customerBlockHandler()
     {
+
         return new CommonResult(200,"按客户自定义限流处理逻辑");
     }
 
